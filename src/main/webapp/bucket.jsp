@@ -14,7 +14,8 @@
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
-<div class="container-div-box">Welcome to the cabinet</div>
+
+<div class="container-div">Creating product</div>
 <jsp:include page="footer.jsp"></jsp:include>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -26,7 +27,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 
 </body>
 </html>
