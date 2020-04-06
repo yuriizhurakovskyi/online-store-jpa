@@ -17,7 +17,7 @@ public class ProductServiceImpl implements ProductService {
 		return productServiceImpl;
 	}
 
-	private ProductServiceImpl() {
+	public ProductServiceImpl() {
 		productDao = new ProductDaoImpl();
 	}
 
