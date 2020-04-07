@@ -1,3 +1,7 @@
+function showAlertAfterRegistration() {
+    $('div.alert.alert-success').show();
+}
+
 $("button.createProduct").click(function () {
     let name = $("form.createProduct input.name").val();
     let description = $("form.createProduct input.description").val();
@@ -11,7 +15,8 @@ $("button.createProduct").click(function () {
 
     $.post("product", product, function (data) {
         if (data == 'Success') {
-            alert("Success");
+            $("form")[0].reset();
+            showAlertAfterRegistration();
         }
     });
 });

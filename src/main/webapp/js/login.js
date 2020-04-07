@@ -3,7 +3,7 @@ function loginRegisterSwitch() {
 }
 
 function showAlertAfterRegistration() {
-   $('div.alert.alert-success').show();
+    $('div.alert.alert-success').show();
 }
 
 $('.message a').click(function () {
