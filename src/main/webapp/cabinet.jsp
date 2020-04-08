@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cabinet.css">
-    <script src="js/header.js"></script>
+
     <title>My Cabinet</title>
 </head>
 <body>
@@ -17,74 +17,7 @@
 <div class="welcome-to-the-cabinet"> Welcome to the cabinet</div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Try Other</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
-                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
-                    <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
-                    <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Try Other</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
-                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
-                    <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
-                    <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Try Other</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
-                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
-                    <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
-                    <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Try Other</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
-                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
-                    <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
-                    <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Try Other</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
-                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
-                    <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
-                    <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Try Other</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
-                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
-                    <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
-                    <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
+       <div id="productCards"></div>
     </div>
     <div class="row">
         <div class="col">
@@ -137,6 +70,7 @@
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/header.js"></script>
+<script src="js/cabinet.js"></script>
 <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
