@@ -9,12 +9,57 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cabinet.css">
+    <link rel="stylesheet" href="css/bucket.css">
     <script src="js/header.js"></script>
     <title>My Bucket</title>
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
 <div class="welcome-to-the-cabinet">My Bucket</div>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<div class="container-fluid">
+    <div class="row">
+        <table id="myTable">
+            <tr class="header">
+                <th style="width:60%;">Name</th>
+                <th style="width:40%;">Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Berglunds snabbkop</td>
+                <td>Sweden</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Koniglich Essen</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Italy</td>
+            </tr>
+            <tr>
+                <td>North/South</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Paris specialites</td>
+                <td>France</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col">
@@ -22,7 +67,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Try Other</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
-                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
+                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link
+                        to view all Bootstrap Menu versions.</p>
                     <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
                     <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
                 </div>
@@ -33,7 +79,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Try Other</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
-                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
+                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link
+                        to view all Bootstrap Menu versions.</p>
                     <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
                     <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
                 </div>
@@ -44,7 +91,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Try Other</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
-                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
+                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link
+                        to view all Bootstrap Menu versions.</p>
                     <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
                     <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
                 </div>
@@ -55,7 +103,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Try Other</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
-                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
+                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link
+                        to view all Bootstrap Menu versions.</p>
                     <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
                     <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
                 </div>
@@ -66,7 +115,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Try Other</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
-                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
+                    <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link
+                        to view all Bootstrap Menu versions.</p>
                     <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
                     <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
                 </div>

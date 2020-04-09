@@ -18,17 +18,18 @@ $("button.createProduct").click(function () {
             $("form")[0].reset();
             showAlertAfterRegistration();
         }
+
     });
 });
 
-$("button.buy-product").click()(function () {
+$("button.buy-product").click(function () {
     let productId = jQuery(this).attr("product-id");
 
-    $.post("bucket", {'productId':productId},
+    $.post("bucket", {'productId': 1},
         function (data) {
-            if (data == 'Success'){
-               $("[data-dismiss-modal]").trigger({type: "click"});
+            if (data == 'Success') {
+                $('#buyProductModal').hide();
                 alert('Success');
             }
-        })
-})
+        });
+});

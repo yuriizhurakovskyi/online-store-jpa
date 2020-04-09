@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page isELIgnored="false" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,15 +17,13 @@
 <body>
 <jsp:include page="header.jsp"></jsp:include>
 
-<div class="container-fluid single-product">
+<div class="container-fluid single-product" id="single-product">
     <div class="col">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">${product.name}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">${product.price}</h6>
                 <p class="card-text">${product.description}</p>
-
-
 
                 <button type="button" class="btn btn-primary" data-toggle="modal"
                         data-target="#buyProductModal">buy product</button>
