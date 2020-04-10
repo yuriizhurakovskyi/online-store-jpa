@@ -2,19 +2,19 @@ package ua.yurii.zhurakovskyi.domain;
 
 import java.util.Date;
 
-public class Bucket {
+public class Cart {
 	private Integer id;
 	private Integer userId;
 	private Integer productId;
 	private Date purchaseDate;
 
-	public Bucket(Integer userId, Integer productId, Date purchaseDate) {
+	public Cart(Integer userId, Integer productId, Date purchaseDate) {
 		this.userId = userId;
 		this.productId = productId;
 		this.purchaseDate = purchaseDate;
 	}
 
-	public Bucket(Integer id, Integer userId, Integer productId, Date purchaseDate) {
+	public Cart(Integer id, Integer userId, Integer productId, Date purchaseDate) {
 		this.id = id;
 		this.userId = userId;
 		this.productId = productId;
@@ -72,7 +72,7 @@ public class Bucket {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Bucket other = (Bucket) obj;
+		Cart other = (Cart) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;

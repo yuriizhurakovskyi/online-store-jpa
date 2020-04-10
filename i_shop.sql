@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS mobile_service;
-CREATE DATABASE mobile_service;
-USE mobile_service;
+DROP DATABASE IF EXISTS i_shop;
+CREATE DATABASE i_shop;
+USE i_shop;
 SELECT database();
 
 -- MySQL dump 10.13  Distrib 8.0.17, for Win64 (x86_64)
@@ -21,30 +21,30 @@ SELECT database();
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `bucket`
+-- Table structure for table `cart`
 --
 
-DROP TABLE IF EXISTS `bucket`;
+DROP TABLE IF EXISTS `cart`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `bucket` (
+CREATE TABLE `cart` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `purchase_date` timestamp NOT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `product_id` FOREIGN KEY (`id`) REFERENCES `product` (`id`),
-  CONSTRAINT `user_id` FOREIGN KEY (`id`) REFERENCES `user` (`id`)
+  CONSTRAINT `product_id` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`),
+  CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `bucket`
+-- Dumping data for table `cart`
 --
 
-LOCK TABLES `bucket` WRITE;
-/*!40000 ALTER TABLE `bucket` DISABLE KEYS */;
-/*!40000 ALTER TABLE `bucket` ENABLE KEYS */;
+LOCK TABLES `cart` WRITE;
+/*!40000 ALTER TABLE `cart` DISABLE KEYS */;
+/*!40000 ALTER TABLE `cart` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -116,4 +116,7 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+
+insert into user ( `email`, `first_name`, `last_name`, `role`,`password`) values
+ ('yuriizhurakovskyi7@gmail.com', 'Yurii', 'Zhurakovskyi', 'ADMINISTRATOR', '12345678');
 -- Dump completed on 2020-03-29 18:26:24

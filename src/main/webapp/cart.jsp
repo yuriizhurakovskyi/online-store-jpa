@@ -9,54 +9,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cabinet.css">
-    <link rel="stylesheet" href="css/bucket.css">
-    <script src="js/header.js"></script>
+    <link rel="stylesheet" href="css/cart.css">
     <title>My Bucket</title>
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
-<div class="welcome-to-the-cabinet">My Bucket</div>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-<div class="container-fluid">
-    <div class="row">
-        <table id="myTable">
-            <tr class="header">
-                <th style="width:60%;">Name</th>
-                <th style="width:40%;">Country</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Berglunds snabbkop</td>
-                <td>Sweden</td>
-            </tr>
-            <tr>
-                <td>Island Trading</td>
-                <td>UK</td>
-            </tr>
-            <tr>
-                <td>Koniglich Essen</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Canada</td>
-            </tr>
-            <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Italy</td>
-            </tr>
-            <tr>
-                <td>North/South</td>
-                <td>UK</td>
-            </tr>
-            <tr>
-                <td>Paris specialites</td>
-                <td>France</td>
-            </tr>
-        </table>
+<div class="welcome-to-the-cabinet">My Bucket
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <div class="container-fluid">
+        <div class="row">
+            <table id="myTable">
+            </table>
+        </div>
     </div>
 </div>
 
@@ -135,6 +99,8 @@
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/header.js"></script>
+<script src="js/serverCalls.js"></script>
+<script src="js/cart.js"></script>
 <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

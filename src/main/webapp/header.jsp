@@ -17,11 +17,11 @@
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item create-product-option">
                     <a class="nav-link" href="createProduct.jsp">Add periodical</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="bucket.jsp">Bucket</a>
+                <li class="nav-item user-bucket-option" >
+                    <a class="nav-link " href="cart.jsp">Cart</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-md-auto d-md-flex">

@@ -14,7 +14,7 @@ $("button.createProduct").click(function () {
     };
 
     $.post("product", product, function (data) {
-        if (data == 'Success') {
+        if (data === 'Success') {
             $("form")[0].reset();
             showAlertAfterRegistration();
         }
@@ -24,12 +24,10 @@ $("button.createProduct").click(function () {
 
 $("button.buy-product").click(function () {
     let productId = jQuery(this).attr("product-id");
-
-    $.post("bucket", {'productId': 1},
+    $.post("cart", {'productId': productId},
         function (data) {
-            if (data == 'Success') {
-                $('#buyProductModal').hide();
-                alert('Success');
+            if (data === 'Success') {
+                $("[data-dismiss=modal]").trigger({type: "click"});
             }
         });
 });
