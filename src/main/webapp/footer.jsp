@@ -16,7 +16,7 @@
                 <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
                 <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                     has been the industry's standard dummy text ever since the 1500s</p>
-                <p><i class="fa fa-location-arrow"></i> 49 Kryvonosa Street, Lviv, 79008 </p>
+                <p><i class="fa fa-location-arrow"></i> 49 Melnyk Street, Lviv, 79008 </p>
                 <p><i class="fa fa-phone"></i> +380950000001 </p>
                 <p><i class="fa fa fa-envelope"></i> yuriizhurakovskyi123@gmail.com </p>
 
