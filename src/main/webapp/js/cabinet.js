@@ -13,12 +13,25 @@ $.get("products", function (data) {
             "<h5 class='card-title'>" + value.name + "</h5>" +
             "<h6 class='card-subtitle mb-2 text-muted'>" + value.price + "</h6>" +
             "<p class='card-text'>" + value.description + "</p>" +
-            "<a href='product?id=" + value.id + "' class='card-link'>link</a>" +
+            "<a href='product?id=" + value.id + "' class='card-link productCardElement'>link</a>" +
             "</div>" +
             "</div>" +
             "</div>"
     });
 
     $('#productCards').html(cardsContent);
+
+
+}).done(function () {
+    $.get("user-role", function (data) {
+        if (data !== '') {
+            userRole = data;
+        }
+    }).done(function () {
+        if (userRole === 'ADMINISTRATOR') {
+            $('a.productCardElement').hide();
+        }
+    });
 });
+
 

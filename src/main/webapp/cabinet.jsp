@@ -17,7 +17,7 @@
 <div class="welcome-to-the-cabinet"> Welcome to the cabinet</div>
 <div class="container-fluid">
     <div class="row">
-       <div id="productCards"></div>
+        <div id="productCards"></div>
     </div>
     <div class="row">
         <div class="col">

@@ -4,7 +4,7 @@ $(document).ready(function () {
         e.preventDefault();
     });
     $("#product-logout").click(function () {
-        $.get("logout", function(data) {
+        $.get("logout", function (data) {
             if (data != '') {
                 let customUrl = '';
                 let urlContent = window.location.href.split('/');
@@ -18,3 +18,17 @@ $(document).ready(function () {
     });
 });
 
+
+$(document).ready(function () {
+    $.get("user-role", function (data) {
+        if (data !== '') {
+            userRole = data;
+        }
+    }).done(function () {
+        if (userRole === 'ADMINISTRATOR') {
+            $('li.user-bucket-option').hide();
+        } else {
+            $('li.create-product-option').hide();
+        }
+    });
+});
