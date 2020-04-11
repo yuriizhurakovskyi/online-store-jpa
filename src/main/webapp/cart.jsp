@@ -14,7 +14,7 @@
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
-<div class="welcome-to-the-cabinet">My Bucket
+<div class="welcome-to-the-cabinet">My Shopping Cart
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
     <div class="container-fluid">
         <div class="row">

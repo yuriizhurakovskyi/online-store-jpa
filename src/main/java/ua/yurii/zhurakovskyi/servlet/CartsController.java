@@ -29,7 +29,6 @@ public class CartsController extends HttpServlet {
         List<Cart> carts = cartService.readAll();
         Map<Integer, Product> idToProduct = productService.readAllMap();
         List<CartDto> listOfCartDtos = map(carts, idToProduct);
-
         String json = new Gson().toJson(listOfCartDtos);
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");

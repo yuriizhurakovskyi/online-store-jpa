@@ -31,8 +31,8 @@ public class CartController extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String cardId = req.getParameter("cardId");
-        cartService.delete(Integer.parseInt(cardId));
+        String cartId = req.getParameter("cartId");
+        cartService.delete(Integer.parseInt(cartId));
         resp.setContentType("text");
         resp.setCharacterEncoding("UTF-8");
         resp.getWriter().write("Success");

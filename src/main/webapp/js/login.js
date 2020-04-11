@@ -32,7 +32,7 @@ $(document).ready(function () {
             };
 
             $.post("registration", userRegistration, function (data) {
-                if (data == 'Success') {
+                if (data === 'Success') {
                     $("form")[0].reset();
                     $("form")[1].reset();
                     loginRegisterSwitch();
@@ -46,7 +46,7 @@ $(document).ready(function () {
         let email = $("form.login-form input.email").val();
         let password = $("form.login-form input.password").val();
 
-        if (email == '' || password == '') {
+        if (email === '' || password === '') {
             alert("Please fill login form!");
         } else {
             let userLogin = {
@@ -54,7 +54,7 @@ $(document).ready(function () {
                 password : password
             };
             $.post("login", userLogin, function(data) {
-                if(data != ''){
+                if(data !== ''){
                     let customUrl = '';
                     let urlContent = window.location.href.split('/');
                     for (let i = 0; i < urlContent.length-1; i++) {
