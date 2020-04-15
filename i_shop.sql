@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS i_shop;
-CREATE DATABASE i_shop;
-USE i_shop;
+DROP DATABASE IF EXISTS jpa;
+CREATE DATABASE jpa;
+USE jpa;
 SELECT database();
 
 -- MySQL dump 10.13  Distrib 8.0.17, for Win64 (x86_64)
@@ -21,13 +21,13 @@ SELECT database();
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `cart`
+-- Table structure for table `bucket`
 --
 
-DROP TABLE IF EXISTS `cart`;
+DROP TABLE IF EXISTS `bucket`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `cart` (
+CREATE TABLE `bucket` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
@@ -39,12 +39,12 @@ CREATE TABLE `cart` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `cart`
+-- Dumping data for table `bucket`
 --
 
-LOCK TABLES `cart` WRITE;
-/*!40000 ALTER TABLE `cart` DISABLE KEYS */;
-/*!40000 ALTER TABLE `cart` ENABLE KEYS */;
+LOCK TABLES `bucket` WRITE;
+/*!40000 ALTER TABLE `bucket` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bucket` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -118,5 +118,5 @@ UNLOCK TABLES;
 
 
 insert into user ( `email`, `first_name`, `last_name`, `role`,`password`) values
- ('yuriizhurakovskyi7@gmail.com', 'Yurii', 'Zhurakovskyi', 'ADMINISTRATOR', '12345678');
+ ('yuriizhurakovskyi7@gmail.com', 'Yurii', 'Zhurakovskyi', 'ADMINISTRATOR', '12345678'); 
 -- Dump completed on 2020-03-29 18:26:24

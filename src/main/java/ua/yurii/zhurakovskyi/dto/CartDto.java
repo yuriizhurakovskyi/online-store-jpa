@@ -8,5 +8,4 @@ public class CartDto {
     public String description;
     public Double price;
     public Date purchaseDate;
-
 }

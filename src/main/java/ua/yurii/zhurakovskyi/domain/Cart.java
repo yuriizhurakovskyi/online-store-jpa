@@ -1,24 +1,27 @@
 package ua.yurii.zhurakovskyi.domain;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
+@Table(name = "bucket")
 public class Cart {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private Integer userId;
-	private Integer productId;
+
+	@ManyToOne
+	@JoinColumn(name = "user_id", referencedColumnName = "id")
+	private User user;
+
+	@ManyToOne
+	@JoinColumn(name = "product_id", referencedColumnName = "id")
+	private Product product;
+
+	@Column(name = "purchase_date")
 	private Date purchaseDate;
 
-	public Cart(Integer userId, Integer productId, Date purchaseDate) {
-		this.userId = userId;
-		this.productId = productId;
-		this.purchaseDate = purchaseDate;
-	}
-
-	public Cart(Integer id, Integer userId, Integer productId, Date purchaseDate) {
-		this.id = id;
-		this.userId = userId;
-		this.productId = productId;
-		this.purchaseDate = purchaseDate;
+	public Cart(){
 	}
 
 	public Integer getId() {
@@ -29,20 +32,20 @@ public class Cart {
 		this.id = id;
 	}
 
-	public Integer getUserId() {
-		return userId;
+	public User getUser() {
+		return user;
 	}
 
-	public void setUserId(Integer userId) {
-		this.userId = userId;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
-	public Integer getProductId() {
-		return productId;
+	public Product getProduct() {
+		return product;
 	}
 
-	public void setProductId(Integer productId) {
-		this.productId = productId;
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 	public Date getPurchaseDate() {
@@ -54,52 +57,12 @@ public class Cart {
 	}
 
 	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result + ((productId == null) ? 0 : productId.hashCode());
-		result = prime * result + ((purchaseDate == null) ? 0 : purchaseDate.hashCode());
-		result = prime * result + ((userId == null) ? 0 : userId.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Cart other = (Cart) obj;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
-			return false;
-		if (productId == null) {
-			if (other.productId != null)
-				return false;
-		} else if (!productId.equals(other.productId))
-			return false;
-		if (purchaseDate == null) {
-			if (other.purchaseDate != null)
-				return false;
-		} else if (!purchaseDate.equals(other.purchaseDate))
-			return false;
-		if (userId == null) {
-			if (other.userId != null)
-				return false;
-		} else if (!userId.equals(other.userId))
-			return false;
-		return true;
-	}
-
-	@Override
 	public String toString() {
-		return "Bucket [id=" + id + ", userId=" + userId + ", productId=" + productId + ", purchaseDate=" + purchaseDate
-				+ "]";
+		return "Cart{" +
+				"id=" + id +
+				", user=" + user +
+				", product=" + product +
+				", purchaseDate=" + purchaseDate +
+				'}';
 	}
-
 }

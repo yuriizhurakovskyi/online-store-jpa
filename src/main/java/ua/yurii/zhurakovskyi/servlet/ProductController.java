@@ -23,7 +23,11 @@ public class ProductController extends HttpServlet {
         String name = req.getParameter("name");
         String description = req.getParameter("description");
         String price = req.getParameter("price");
-        productService.create(new Product(name, description, getValidatedPrice(price)));
+        Product product = new Product();
+        product.setName(name);
+        product.setDescription(description);
+        product.setPrice(Double.parseDouble(price));
+        productService.create(product);
         resp.setContentType("text");
         resp.setCharacterEncoding("UTF-8");
         resp.getWriter().write("Success");
