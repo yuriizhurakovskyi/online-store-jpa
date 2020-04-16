@@ -40,7 +40,7 @@ public class CartsController extends HttpServlet {
             CartDto cartDto = new CartDto();
             cartDto.cartId = cart.getId();
             cartDto.purchaseDate = cart.getPurchaseDate();
-            Product product = idToProduct.get(cart.getProductId());
+            Product product = idToProduct.get(cart.getProduct().getId());
             cartDto.name = product.getName();
             cartDto.description = product.getDescription();
             cartDto.price = product.getPrice();

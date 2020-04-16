@@ -20,7 +20,7 @@ public class CreateProductFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        filterService.doFilterValidation(request, response, chain, Arrays.asList(UserRole.ADMINISTRATOR));
+        filterService.doFilterValidation(request, response, chain, Arrays.asList(UserRole.ADMINISTRATOR, UserRole.USER));
     }
 
     @Override
